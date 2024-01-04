@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.229s</div>
+<div class="counter">0.239s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">testCreateReadUpdate</td>
-<td class="success">0.229s</td>
+<td class="success">0.239s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,21 +87,21 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-01-03 19:41:04.143  INFO 31564 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest], using SpringBootContextLoader
-2024-01-03 19:41:04.144  INFO 31564 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-01-03 19:41:04.144  INFO 31564 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-03 19:41:04.153  INFO 31564 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
-2024-01-03 19:41:04.154  INFO 31564 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-01-03 19:41:04.155  INFO 31564 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@215a0264, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45832b85, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@103478b8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@270f7b4d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56b704ea, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ab4d2ba, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@39f68aec, org.springframework.test.context.event.EventPublishingTestExecutionListener@65ff4b8c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b81938d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@278cb145, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2aa0feb2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@351c6341, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32069394]
-2024-01-03 19:41:04.285  INFO 31564 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-03 19:41:04.285  INFO 31564 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-03 19:41:04.309  INFO 31564 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
-2024-01-03 19:41:04.349 DEBUG 31564 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@367eb315]
-2024-01-03 19:41:04.349 DEBUG 31564 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@367eb315]
-2024-01-03 19:41:04.373 DEBUG 31564 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for id [3b4bdf11-aed1-448f-bad9-393330019632]
-2024-01-03 19:41:04.373 DEBUG 31564 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [3b4bdf11-aed1-448f-bad9-393330019632]
-2024-01-03 19:41:04.382 DEBUG 31564 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for id [3b4bdf11-aed1-448f-bad9-393330019632] and employee [com.mindex.challenge.data.Employee@10a81b11]
-2024-01-03 19:41:04.382 DEBUG 31564 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@10a81b11]
+<pre>2024-01-03 21:14:54.564  INFO 20456 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest], using SpringBootContextLoader
+2024-01-03 21:14:54.565  INFO 20456 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-01-03 21:14:54.565  INFO 20456 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-03 21:14:54.567  INFO 20456 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+2024-01-03 21:14:54.568  INFO 20456 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-01-03 21:14:54.568  INFO 20456 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3605ab16, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30cb223b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@24d0c6a4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@50e24ea4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4ba402b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@22172b00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d02c00, org.springframework.test.context.event.EventPublishingTestExecutionListener@4205d5d0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@29dfc68f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@320ba79f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@333a2df2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ffdd510, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@8c18bde]
+2024-01-03 21:14:54.703  INFO 20456 --- [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-03 21:14:54.703  INFO 20456 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-03 21:14:54.727  INFO 20456 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2024-01-03 21:14:54.770 DEBUG 20456 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@32ec405d]
+2024-01-03 21:14:54.770 DEBUG 20456 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@32ec405d]
+2024-01-03 21:14:54.795 DEBUG 20456 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for id [47ab99ad-e313-4f99-975f-bccb97d8c0c4]
+2024-01-03 21:14:54.795 DEBUG 20456 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [47ab99ad-e313-4f99-975f-bccb97d8c0c4]
+2024-01-03 21:14:54.804 DEBUG 20456 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for id [47ab99ad-e313-4f99-975f-bccb97d8c0c4] and employee [com.mindex.challenge.data.Employee@4c20db4]
+2024-01-03 21:14:54.804 DEBUG 20456 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@4c20db4]
 </pre>
 </span>
 </div>
@@ -113,7 +113,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.3</a> at Jan 3, 2024, 7:41:04 PM</p>
+<a href="http://www.gradle.org">Gradle 7.3</a> at Jan 3, 2024, 9:14:54 PM</p>
 </div>
 </div>
 </body>

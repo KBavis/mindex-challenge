@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.data.ReportingStructure;
 import com.mindex.challenge.service.EmployeeService;
+import com.mindex.challenge.service.ReportingStructureService;
 
 @RestController
 @RequestMapping("/reportingStructure")
@@ -16,6 +17,9 @@ public class ReportingStructureController {
 	
 	@Autowired
 	private EmployeeService employeeService;
+	
+	@Autowired
+	private ReportingStructureService reportingStructureService;
 	
 	/**
 	 * Fetch ReportingStructure of Employee
@@ -29,7 +33,8 @@ public class ReportingStructureController {
 		if(employee == null) {
 			return null;
 		}
-		
-		return new ReportingStructure(employee);
+
+		int numberOfReports = reportingStructureService.calculateUniqueReports(employee); //fetch number of unique reports
+		return new ReportingStructure(employee, numberOfReports);
 	}
 }

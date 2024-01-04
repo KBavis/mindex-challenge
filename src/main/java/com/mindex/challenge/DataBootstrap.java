@@ -17,14 +17,10 @@ import com.mindex.challenge.data.Employee;
 @Component
 public class DataBootstrap {
     private static final String EMPLOYEE_DATASTORE_LOCATION = "/static/employee_database.json";
-    private static final String COMPENSATION_DATASOURCE_LOCATION = "/static/employee_database.json";
     
     @Autowired
     private EmployeeRepository employeeRepository;
     
-    @Autowired
-    private CompensationRepository compensationRepository;
-
     @Autowired
     private ObjectMapper objectMapper;
 
@@ -42,19 +38,6 @@ public class DataBootstrap {
 
         for (Employee employee : employees) {
             employeeRepository.insert(employee);
-        }
-        
-        InputStream compensationInputStream = this.getClass().getResourceAsStream(COMPENSATION_DATASOURCE_LOCATION);
-        Compensation[] compensations = null;
-
-        try {
-            compensations = objectMapper.readValue(compensationInputStream, Compensation[].class);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        for (Compensation compensation : compensations) {
-            compensationRepository.insert(compensation);
         }
     }
 }
